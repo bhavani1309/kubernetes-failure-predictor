@@ -104,6 +104,11 @@ Webhooks & command generation for auto-remediation
  📥 Please use the Google Drive links above to view/download them.
  Demo video is hosted externally due to GitHub size limits.
 
+ ---
+
+ [![Streamlit App](https://img.shields.io/badge/Live_App-Streamlit-blue?logo=streamlit)](https://kubernetes-failure-predictor-8xw3pfjyjtucudpiyqwmgd.streamlit.app/)
+
+
 ---
 
 ## 🤝 Team
