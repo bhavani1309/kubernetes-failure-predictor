@@ -3,14 +3,20 @@ import joblib
 import numpy as np
 import pandas as pd
 import requests
+import os
 
-# Load saved artifacts
-model = joblib.load('xgb_model.pkl')
-scaler = joblib.load('scaler.pkl')
-label_encoders = joblib.load('label_encoders.pkl')
-feature_columns = joblib.load('feature_columns.pkl')
+# -------- Load saved artifacts --------
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(CURRENT_DIR)
+MODEL_DIR = os.path.join(ROOT_DIR, 'models')
+SRC_DIR = os.path.join(ROOT_DIR, 'src')
 
-# Sidebar settings
+model = joblib.load(os.path.join(MODEL_DIR, 'xgb_model.pkl'))
+scaler = joblib.load(os.path.join(MODEL_DIR, 'scaler.pkl'))
+label_encoders = joblib.load(os.path.join(SRC_DIR, 'label_encoders.pkl'))
+feature_columns = joblib.load(os.path.join(SRC_DIR, 'feature_columns.pkl'))
+
+# -------- Sidebar settings --------
 st.sidebar.markdown("## ⚙️ Settings")
 threshold = st.sidebar.slider(
     "Set Prediction Threshold",
@@ -21,16 +27,15 @@ threshold = st.sidebar.slider(
     help="Adjust model sensitivity"
 )
 
-# Optional webhook function (logging/alerting)
+# -------- Optional webhook function --------
 def send_alert(message):
     try:
-        webhook_url = "https://webhook.site/your-unique-url"
-  # Replace with your own
+        webhook_url = "https://webhook.site/your-unique-url"  # Replace with your own
         requests.post(webhook_url, json={"text": message})
     except:
         pass
 
-# Risk level assignment function
+# -------- Risk level assignment --------
 def assign_risk_label(prob):
     if prob > 0.60:
         return "🔴 High"
@@ -41,11 +46,11 @@ def assign_risk_label(prob):
     else:
         return "🟢 None"
 
-# Remediation logic
+# -------- Remediation logic --------
 def remediation_action(row):
     if row['prediction'] == 0:
         return "No action needed"
-
+    
     failure_type_map = {
         'pod_stuck': "Restart pod",
         'cpu_throttle': "Scale up pod CPU",
@@ -53,7 +58,7 @@ def remediation_action(row):
         'image_pull_error': "Check image repo/auth",
         'disk_full': "Clear disk or increase storage"
     }
-
+    
     try:
         decoded_ft = label_encoders['failure_type'].inverse_transform([row['failure_type']])[0]
     except:
@@ -61,7 +66,7 @@ def remediation_action(row):
 
     return failure_type_map.get(decoded_ft, "Alert admin")
 
-# Title
+# -------- UI Title --------
 st.title("Kubernetes Failure Predictor 🤖")
 st.markdown("Predict failures, explain causes, and recommend/simulate remediation actions.")
 
@@ -199,3 +204,4 @@ if st.button("Predict Failure (Manual Entry)"):
         send_alert(f"[Auto-Remediation] Predicted Failure. Action: {rem_action}")
     else:
         st.info("No action needed at this time.")
+
