@@ -41,13 +41,13 @@ The Streamlit-based failure prediction app is fully containerized and can be run
 
 ### Build and Run Locally:
  
-# From the project root, navigate to the Docker folder
+From the project root, navigate to the Docker folder:
 cd docker
 
-# Build the Docker image
-docker build -t kubefail-predictor .
+Build the Docker image:
+docker build -t kubefail-predictor 
 
-# Run the container
+Run the container:
 docker run -p 8501:8501 kubefail-predictor
 
 After running the container, open your browser and go to:
@@ -88,7 +88,7 @@ Replace my-k8s-app-xxxx with the actual pod name.
 
 ---
 
-💡 Unique Features
+## 💡 Unique Features
 
 Full AI-Ops loop: predict → explain → remediate
 Chaos engineering for data generation
@@ -98,7 +98,7 @@ Webhooks & command generation for auto-remediation
 
 ---
 
-📎 Notes for Judges
+## 📎 Notes for Judges
 
  Files like .csv, .pkl, .pptx, .docx are large and may not render in GitHub.
  📥 Please use the Google Drive links above to view/download them.
@@ -106,7 +106,7 @@ Webhooks & command generation for auto-remediation
 
 ---
 
-🤝 Team
+## 🤝 Team
 Tricoders — Building self-healing Kubernetes clusters for the future.
 
 
