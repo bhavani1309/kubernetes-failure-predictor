@@ -6,7 +6,7 @@ An AI-powered, proactive failure detection and self-healing system for Kubernete
 
 ## 📂 Repository Structure
 
-📁 /src → Codebase (model training, Streamlit app, utilities) 📁 /models → Trained models (*.pkl files) 📁 /dataset_used → Dataset used for training 📁 /presentation → Slides, documentation & recorded demo 📁 /deployment → YAMLs for K8s deployment 📁 /helm_chart → Helm chart for production-style packaging 📁 /sample_data_for_streamlit → sample dataset of failures for testing in streamlit 📁 /docker → Dockerfile for the Streamlit app container
+📁 /src → Codebase (model training, Streamlit app, utilities) 📁 /models → Trained models (*.pkl files) 📁 /dataset_used → Dataset used for training and python code we used to generate the dataset using chaos engineering inspired technique 📁 /presentation → Slides, documentation & recorded demo 📁 /deployment → YAMLs for K8s deployment 📁 /helm_chart → Helm chart for production-style packaging 📁 /sample_data_for_streamlit → sample dataset of failures for testing in streamlit 📁 /docker → Dockerfile for the Streamlit app container
 
 ---
 
