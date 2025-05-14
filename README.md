@@ -98,7 +98,7 @@ Webhooks & command generation for auto-remediation
 
 ---
 
-## 📎 Notes for Judges
+## 📎 Note
 
  Files like .csv, .pkl, .pptx, .docx are large and may not render in GitHub.
  📥 Please use the Google Drive links above to view/download them.
@@ -111,8 +111,8 @@ Webhooks & command generation for auto-remediation
 
 ---
 
-## 🤝 Team
-Tricoders — Building self-healing Kubernetes clusters for the future.
+## Bhavani Thantanapalli 
+ — Building self-healing Kubernetes clusters for the future.
 
 
 
