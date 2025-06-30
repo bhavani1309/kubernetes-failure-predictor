@@ -20,7 +20,7 @@ An AI-powered, proactive failure detection and self-healing system for Kubernete
 | 🔤 Label Encoders (`label_encoders.pkl`) | `/src/label_encoders.pkl`         | [Google Drive](https://drive.google.com/file/d/1afYmZAhPiAPso1e74FLcRsyeqfA9OpUu/view?usp=drive_link) |
 | 🧩 Feature Columns (`feature_columns.pkl`) | `/src/feature_columns.pkl`       | [Google Drive](https://drive.google.com/file/d/1eAfztkKG0PJUPKkATsYgtfhmSWveNa40/view?usp=drive_link) |
 | 🧾 Project Documentation             | `/presentation/documentation.docx`    | [Google Drive](https://docs.google.com/document/d/1qBCNQ-q9bsVLexPCD3Q09sT3c98OtbRH/edit?usp=drive_link&ouid=117645952678248031987&rtpof=true&sd=true) |
-| 🎞️ Demo Presentation (Slides)       | `/presentation/devtrails.pptx`        | [Google Drive](https://docs.google.com/presentation/d/1WfDEnlqzpwwHreRkCUS0pmLiPo8_Y6su/edit?usp=drive_link&ouid=117645952678248031987&rtpof=true&sd=true) |
+| 🎞️ Demo Presentation (Slides)       | `/presentation/k8sppt.pptx`        | [Google Drive](https://docs.google.com/presentation/d/1WfDEnlqzpwwHreRkCUS0pmLiPo8_Y6su/edit?usp=drive_link&ouid=117645952678248031987&rtpof=true&sd=true) |
 | ▶️ Recorded Demo Video              | (Too large for GitHub)                | [Google Drive](https://drive.google.com/file/d/1Bhciz16XNsNhGD476EVuqyqcB8HlRuzG/view?usp=drive_link) |
 | 📦 Streamlit UI Code                | `/src/streamlit_app.py`               | ✅ Included |
 | 📦 Dockerfile for App Packaging     | `/docker/Dockerfile`                  | ✅ Included |
