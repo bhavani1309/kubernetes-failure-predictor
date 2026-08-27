@@ -1,0 +1,22 @@
+{
+  "BrokenImage": {
+    "total": 250,
+    "success": 0
+  },
+  "CustomCrashSignal": {
+    "total": 278,
+    "success": 0
+  },
+  "ResourceExhaustion": {
+    "total": 81,
+    "success": 0
+  },
+  "Unknown Issue": {
+    "total": 3,
+    "success": 0
+  },
+  "UnknownIssue": {
+    "total": 100,
+    "success": 0
+  }
+}

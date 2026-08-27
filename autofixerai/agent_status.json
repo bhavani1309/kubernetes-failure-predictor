@@ -1,0 +1,17 @@
+{
+  "running": true,
+  "issues": [
+    {
+      "pod_name": "my-crash-pod ===",
+      "name": "CrashLoopBackOff",
+      "fix": "kubectl rollout restart deployment {deployment}",
+      "snippet": "Error: CrashLoopBackOff detected\nThis pod will crash repeatedly due to insufficient memory"
+    },
+    {
+      "pod_name": "my-image-pod ===",
+      "name": "ImagePullBackOff",
+      "fix": "kubectl delete pod {pod}",
+      "snippet": "Error from server (BadRequest): Failed to pull image xyz:latest"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crash-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crash
+  template:
+    metadata:
+      labels:
+        app: crash
+    spec:
+      restartPolicy: Always
+      containers:
+      - name: fail
+        image: busybox
+        command: ["/bin/sh","-c","echo crashing; exit 1"]

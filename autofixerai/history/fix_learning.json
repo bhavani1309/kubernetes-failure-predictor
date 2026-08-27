@@ -1,0 +1,774 @@
+[
+  {
+    "timestamp": "2025-06-21T15:25:43.846191",
+    "pod": "my-k8s-app-57fd566645-tx72h",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "\u274c LLM Error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=500)",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:25:43.922847",
+    "pod": "my-k8s-app-57fd566645-tx72h",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "\u274c LLM Error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=500)",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:25:44.016352",
+    "pod": "my-k8s-app-57fd566645-tx72h",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "\u274c LLM Error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=500)",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:59:24.323364",
+    "pod": "my-k8s-app-57fd566645-tx72h",
+    "issue_type": "ErrImagePull",
+    "fix_command": "docker login registry-url (Replace 'registry-url' with your actual Docker registry URL)",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:59:24.550572",
+    "pod": "my-k8s-app-57fd566645-tx72h",
+    "issue_type": "ErrImagePull",
+    "fix_command": "docker login registry-url (Replace 'registry-url' with your actual Docker registry URL)",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:59:24.820017",
+    "pod": "my-k8s-app-57fd566645-tx72h",
+    "issue_type": "ErrImagePull",
+    "fix_command": "docker login registry-url (Replace 'registry-url' with your actual Docker registry URL)",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T16:39:55.400417",
+    "pod": "my-k8s-app-57fd566645-tx72h",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "`kubectl image-policy my-k8s-app-57fd566645 --allow-misspecification`",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T16:39:55.541092",
+    "pod": "my-k8s-app-57fd566645-tx72h",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "`kubectl image-policy my-k8s-app-57fd566645 --allow-misspecification`",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T16:39:55.693165",
+    "pod": "my-k8s-app-57fd566645-tx72h",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "`kubectl image-policy my-k8s-app-57fd566645 --allow-misspecification`",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T13:33:42.675411",
+    "pod": "autofixerai-59f5f64bb9-qnmqf ===",
+    "issue_type": "UnknownIssue",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T13:40:23.807290",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T13:44:02.533301",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "UnknownIssue",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T13:47:37.288100",
+    "pod": "my-k8s-app-68cb77db4d-cqr9m ===",
+    "issue_type": "UnknownIssue",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T13:50:48.969877",
+    "pod": "my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "issue_type": "UnknownIssue",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T13:54:45.643004",
+    "pod": "nginx-pod ===",
+    "issue_type": "UnknownIssue",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T14:04:17.953074",
+    "pod": "autofixerai-59f5f64bb9-qnmqf ===",
+    "issue_type": "UnknownIssue",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T14:12:44.198943",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T14:21:38.624637",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T14:27:18.256312",
+    "pod": "my-k8s-app-68cb77db4d-cqr9m ===",
+    "issue_type": "UnknownIssue",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:03:33.569815",
+    "pod": "autofixerai-59f5f64bb9-qnmqf ===",
+    "issue_type": "No issues found",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:09:59.203142",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:17:09.728965",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:24:30.225100",
+    "pod": "my-k8s-app-68cb77db4d-cqr9m ===",
+    "issue_type": "No issues found",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:31:04.975680",
+    "pod": "my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "issue_type": "Container Crash Loop Backoff",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T15:40:16.329111",
+    "pod": "nginx-pod ===",
+    "issue_type": "Container termination error",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T16:17:44.697767",
+    "pod": "autofixerai-59f5f64bb9-qnmqf ===",
+    "issue_type": "Missing Host Port Assignment",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T16:24:43.166308",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T16:31:15.427897",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T16:38:52.778286",
+    "pod": "my-k8s-app-68cb77db4d-cqr9m ===",
+    "issue_type": "Pod is not assigned to any ReplicaSet",
+    "fix_command": "{\"name\": \"UnknownIssue\", \"fix\": \"echo Not fixed\", \"explanation\": \"Fallback due to LLM error\"}",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T17:30:12.988010",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": {
+      "name": "CrashLoopBackOff",
+      "fix": "kubectl logs crash-test --namespace=default && kubectl delete pod crash-test --namespace=default && kubectl run crash-test --image=<new-image> --restart=Never --namespace=default",
+      "explanation": "The given command first retrieves the logs of the pod to check for any errors. Then it deletes the existing problematic pod. Finally, it creates a new pod with a different image and sets the restart policy to Never to prevent automatic recreation of the pod until we've confirmed the issue is fixed."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T18:00:38.608930",
+    "pod": "autofixerai-59f5f64bb9-qnmqf ===",
+    "issue_type": "Unmatched Logs",
+    "fix_command": {
+      "name": "Unmatched Logs",
+      "fix": "kubectl logs <pod-name> -c <container-name> --follow | grep 'unexpected value' > unmatched_logs.txt && grep -v 'unexpected value' -f unmatched_logs.txt > filtered_log.txt",
+      "explanation": "This command collects the logs of the specified pod and container, filters out the unexpected values (assuming that is what causes the mismatch), saves the unexpected values in a file named 'unmatched_logs.txt', and then outputs the remaining log messages excluding the unexpected values."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T18:05:59.707183",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": {
+      "name": "CrashLoopBackOff",
+      "fix": "kubectl logs crash-test --namespace=default && kubectl delete pod crash-test --namespace=default && kubectl run crash-test --image=<your_fixed_image> --namespace=default",
+      "explanation": "The given command first logs the current state of the problematic pod to check for any errors or issues. Then, it deletes the current pod instance. After that, a new pod is created with the corrected image specified."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T18:12:05.600519",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": {
+      "name": "ImagePullBackOff",
+      "fix": "kubectl edit deployment <deployment-name> -n <namespace>",
+      "explanation": "Edit the deployment YAML to ensure the image pull policy is set correctly (e.g., 'ImagePullPolicy: Pull'). If it's already set, check the image name and repository for typos or incorrect configuration."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T18:19:14.292548",
+    "pod": "my-k8s-app-68cb77db4d-cqr9m ===",
+    "issue_type": "Unmatched log output",
+    "fix_command": {
+      "name": "Unmatched log output",
+      "fix": "Use `kubectl logs <pod-name> --follow` to stream logs and identify the issue or use `kubectl logs <pod-name>` to get the latest logs.",
+      "explanation": "The fix command helps in understanding the root cause of the unmatched log output by either streaming live logs for real-time analysis or getting the latest logs. Streaming logs allows you to observe the issue as it happens, while getting the latest logs provides a snapshot of the current state."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T18:26:20.525480",
+    "pod": "my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "issue_type": "Container Crash Loop Backoff",
+    "fix_command": {
+      "name": "Container Crash Loop Backoff",
+      "fix": "kubectl describe pod my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p | grep -B10 'Warning' | grep CrashLoopBackOff | tail -n 1 && kubectl logs my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p --previous && kubectl rollout undo deployment/my-k8s-app-my-k8s-app-chart",
+      "explanation": "The fix command is used to describe the pod, find the cause of CrashLoopBackOff error, display the previous logs and then rollback the deployment to a previous successful state. This is done in case the current image version has an issue causing container crashes."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T18:36:26.252653",
+    "pod": "nginx-pod ===",
+    "issue_type": "Container Crash Loop Backoff",
+    "fix_command": {
+      "name": "Container Crash Loop Backoff",
+      "fix": "kubectl edit deployment/nginx-pod -n default --container=nginx-pod",
+      "explanation": "This command will open the nginx-pod deployment yaml file in your default namespace for editing. Look for the container section and check if there are any configuration errors that might be causing the container to crash loop. Once you have fixed the issue, save and exit the file to update the pod."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-21T19:11:51.397209",
+    "pod": "autofixerai-59f5f64bb9-qnmqf ===",
+    "issue_type": "Unhealthy Endpoint",
+    "fix_command": {
+      "name": "Unhealthy Endpoint",
+      "fix": "kubectl describe pod autofixerai-59f5f64bb9 | grep 'Condition field' && kubectl edit pod autofixerai-59f5f64bb9 -c autofixerai --container-security-context='runtime/user:root'",
+      "explanation": "The fix command first describes the pod to check for any conditions related to its health. If an unhealthy condition is found, it edits the specified container (autofixerai) in the specified pod (autofixerai-59f5f64bb9). The --container-security-context flag is used to ensure the container runs with root privileges, which may help resolve any permissions issues causing the endpoint to be unhealthy."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T05:11:03.029163",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": {
+      "name": "ImagePullBackOff",
+      "fix": "kubectl describe pod my-k8s-app-57fd566645-tx72h | grep 'Image:' | awk '{print $2}' | xargs kubectl image update --image=<new_image_url>",
+      "explanation": "The issue is that the container image cannot be pulled. The fix provided updates the container image URL for the problematic pod to a new one. This command uses `kubectl describe` to get the image name, then pipes it to grep and awk to extract the image URL, and finally updates the image using kubectl."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T05:15:02.755347",
+    "pod": "my-k8s-app-68cb77db4d-cqr9m ===",
+    "issue_type": "Unmatched Logging Configurations",
+    "fix_command": {
+      "name": "Unmatched Logging Configurations",
+      "fix": "Apply appropriate logging configurations to your Kubernetes deployment YAML files. For example, if you're using Fluentd as a logger for this pod, ensure that its configuration is properly included and correct.",
+      "explanation": "The issue 'Unmatched Logging Configurations' means that the logging setup in your Kubernetes application might be incorrect or missing. By applying the appropriate logging configurations to your YAML files, you can ensure that logs are collected, routed, and stored correctly. If you're using Fluentd as a logger for this pod, check its configuration within the deployment, daemonset, or statefulset YAML file."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T05:23:36.103842",
+    "pod": "nginx-pod ===",
+    "issue_type": "Container Crash Loop Backoff",
+    "fix_command": {
+      "name": "Container Crash Loop Backoff",
+      "fix": "kubectl edit deployment/nginx-pod -n default",
+      "explanation": "This command will open the yaml configuration of the nginx-pod deployment for editing. The issue might be due to some misconfiguration, and by editing the deployment's yaml file directly, you can make necessary changes to resolve the crash loop backoff problem."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T05:43:21.694949",
+    "pod": "autofixerai-59f5f64bb9-qnmqf ===",
+    "issue_type": "UnmatchedLog",
+    "fix_command": {
+      "name": "UnmatchedLog",
+      "fix": "'kubectl logs <pod-name> --follow | kubectl edit -c <container-name>', then 'exit' to save and exit",
+      "explanation": "The fix command will retrieve the logs of the specified pod, follow them in real time, and allow you to edit the container's contents. After editing and saving the changes (by pressing 'exit'), Kubernetes will automatically restart the container with the new configuration."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T05:49:13.480687",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": {
+      "name": "CrashLoopBackOff",
+      "fix": "kubectl logs crash-test && kubectl delete pod crash-test && kubectl create -f <your-fixed-deployment-yaml>",
+      "explanation": "The command logs the error in the current pod (crash-test), deletes it, and recreates it using a fixed version of the deployment YAML file. The purpose is to remove any unhealthy or failing containers and start new ones with corrected configurations."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T05:54:31.785972",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": {
+      "name": "ImagePullBackOff",
+      "fix": "kubectl edit deployment <deployment-name> -n <namespace>",
+      "explanation": "The issue 'ImagePullBackOff' occurs when a pod cannot pull the required container image. This fix command opens the deployment yaml for editing, where you can check if the correct image name and registry are specified."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T05:59:57.000337",
+    "pod": "my-k8s-app-68cb77db4d-cqr9m ===",
+    "issue_type": "Unmatched logs",
+    "fix_command": {
+      "name": "Unmatched logs",
+      "fix": "kubectl logs my-k8s-app-68cb77db4d -c my-k8s-app --follow",
+      "explanation": "This command retrieves the logs for the specified pod and container, allowing you to view and follow any new log entries in real time."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T06:06:53.851397",
+    "pod": "my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "issue_type": "Readiness probe failed",
+    "fix_command": {
+      "name": "Readiness probe failed",
+      "fix": "kubectl edit deployment/my-k8s-app-my-k8s-app-chart -n default",
+      "explanation": "This command will open the Kubernetes deployment YAML file for the specified deployment in a text editor. Check if there is an issue with the readiness probe configuration. If found, correct it and save the changes."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T06:13:22.094651",
+    "pod": "nginx-pod ===",
+    "issue_type": "Pod Container Crash Loop Backoff",
+    "fix_command": {
+      "name": "Pod Container Crash Loop Backoff",
+      "fix": "kubectl logs <pod-name> --container=<container-name> | grep 'Last crash' && kubectl edit deployment <deployment-name>",
+      "explanation": "The provided command does two things: first, it retrieves the logs from the specific container in the problematic pod to find the cause of the crashes (Last crash message). Second, it allows you to edit the corresponding Kubernetes deployment configuration to make necessary adjustments."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T07:03:07.321679",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": {
+      "name": "CrashLoopBackOff",
+      "fix": "kubectl logs crash-test -c fail-container --previous && kubectl delete pod crash-test && kubectl run crash-test --image=busybox --restart=Never",
+      "explanation": "The fix consists of two steps. First, it retrieves the logs of the previous instances of the crashed pod (crash-test) to check for any errors or issues that might have led to the CrashLoopBackOff status. Then, it deletes the existing crashed pod and recreates a new one with the same name (crash-test), but this time with a 'Never' restart policy instead of its default value which seems to be causing the issue."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T07:15:22.408250",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": {
+      "name": "ImagePullBackOff",
+      "fix": "kubectl edit deployment <deployment-name> -n <namespace>",
+      "explanation": "The issue is caused by the container image not being pulled. The suggested fix is to use 'kubectl edit deployment' command to open the YAML manifest of the affected deployment in the editor, check if the image name and tag are correct and have the necessary permissions. Save the changes and apply them."
+    },
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T07:36:16.837449",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T07:36:18.311132",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Escalation: initial fix"
+  },
+  {
+    "timestamp": "2025-06-22T07:36:19.638711",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl logs crash-test ===",
+    "success": false,
+    "source": "Escalation: check for app error logs"
+  },
+  {
+    "timestamp": "2025-06-22T08:36:44.476159",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T08:36:45.164420",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Escalation: initial fix"
+  },
+  {
+    "timestamp": "2025-06-22T08:36:45.706841",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl logs crash-test ===",
+    "success": false,
+    "source": "Escalation: check for app error logs"
+  },
+  {
+    "timestamp": "2025-06-22T09:18:14.263404",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T09:18:15.113523",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Escalation: initial fix"
+  },
+  {
+    "timestamp": "2025-06-22T09:18:15.871781",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl logs crash-test ===",
+    "success": false,
+    "source": "Escalation: check for app error logs"
+  },
+  {
+    "timestamp": "2025-06-22T09:25:14.314583",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": " It appears you have a container named `fail-container` running within the `crash-test` pod in the default namespace. The container is using the BusyBox image, identified by the Container ID `ba30e44c78d6fe05503b6618a2c209cd1d58aa1a6b6bdc3843b742f9d997c860`. The container is currently running and can be found on the Minikube node with IP address `192.168.49.2`.\n\nThe container's IP within the pod network is `10.244.0.235`, and there is only one IP associated with this pod (`10.244.0.235`). The status of the pod is Running, but without further context or logs, it's difficult to determine why the container might be named \"fail-container.\"\n\nTo gather more information about the state and behavior of this container, you can run `kubectl logs crash-test fail-container` to view the container's logs or use the `describe` command for additional details. For example:\n\n```sh\n$ kubectl describe pod crash-test\n...\nContainers:\n  fail-container:\n    Container ID:  docker://ba30e44c78d6fe05503b6618a2c209cd1d58aa1a6b6bdc3843b742f9d997c860\n    Image:         busybox\n    Image ID:      docker-pullable://busybox@sha256:e6edf430a57df662db1998a2ef9e877d7d95222c0ebb9beb127e27cd73540825\n    Port:          <none>\n    Host Port:     <none>\n    Args:\n      /bin/sh\n      -c\n      echo 'Container failed as expected.' > /tmp/result.txt && exit 1\n    State:          Running\n      Started:      Sat, 21 Jun 2025 17:42:21 +0530\n    Ready:          True\n    Restart Count:  0\n...\n```\n\nIn this example, the container is expected to fail as indicated by the command `echo 'Container failed as expected.' > /tmp/result.txt && exit 1`. Checking the logs will help you determine if it's behaving as intended or if there are issues with the application running inside the container.",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T09:33:16.601032",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "kubectl delete pod my-k8s-app-57fd566645-tx72h ===",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T09:33:18.509955",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "kubectl delete pod my-k8s-app-57fd566645-tx72h ===",
+    "success": false,
+    "source": "Escalation: first attempt"
+  },
+  {
+    "timestamp": "2025-06-22T09:38:09.291256",
+    "pod": "my-k8s-app-57fd566645-tx72h ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": " It appears you have a Kubernetes Pod named \"my-k8s-app-57fd566645-tx72h\" in the namespace \"default\". The pod is currently in the \"Pending\" state, which means it has been scheduled to run on a node (Minikube/192.168.49.2), but it hasn't started yet.\n\nThe Start Time is June 21, 2025, at 14:42:17 +0530, and the pod has been labeled with \"app=my-k8s-app\" and \"pod-template-hash=57fd566645\". It also has annotations regarding when it was last restarted.\n\nThe IP address assigned to this pod is 10.244.0.234, which is in the range used for Pod IPs within a Kubernetes cluster. The controlled by field indicates that this pod is managed by a ReplicaSet named \"my-k8s-app-57fd\".\n\nIf you're experiencing issues with this pod being stuck in the Pending state, I recommend checking the events associated with this pod and the underlying nodes to determine why it isn't starting. You can do this using kubectl commands such as:\n\n1. `kubectl describe pod my-k8s-app-57fd` for details about the pod\n2. `kubectl get events --field-selector involving=my-k8s-app-57fd` for a list of related events",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T09:56:17.941111",
+    "pod": "my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "issue_type": "Container Crash Loop Backoff",
+    "fix_command": " Based on the information provided, it appears that you have a Kubernetes deployment named `my-k8s-app` running in the `default` namespace, managed by Helm version 1.16.0. The pod associated with this deployment has a Service Account of `my-k8s-app-my-k8s-app-chart`, and it is currently running on a node named `minikube/192.168.49.2`.\n\nThe Start Time of the pod indicates when it was first created, which is April 12, 2025 at 11:27 AM +0530 (India Standard Time). The labels associated with this deployment provide additional information about its instance, name, and version.\n\nTo troubleshoot any issues or monitor the health of your application, you can use Kubernetes command-line tools like `kubectl` to interact with your cluster and check on the status of the pods and services related to your `my-k8s-app`. For example, you can use the following command to get detailed information about the `my-k8s-app` deployment:\n\n```sh\nkubectl describe deployment my-k8s-app -n default\n```\n\nYou may also find it helpful to set up monitoring and logging for your application using tools like Prometheus, Grafana, or Loki. These tools can help you identify issues quickly and ensure that your application is running smoothly and efficiently.",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T12:56:13.513321",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T12:56:14.158713",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Escalation: initial fix"
+  },
+  {
+    "timestamp": "2025-06-22T12:56:14.614748",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl logs crash-test ===",
+    "success": false,
+    "source": "Escalation: check for app error logs"
+  },
+  {
+    "timestamp": "2025-06-22T13:01:58.292553",
+    "pod": "my-k8s-app-57fd566645-jxkm4 ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "kubectl delete pod my-k8s-app-57fd566645-jxkm4 ===",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T13:01:59.925205",
+    "pod": "my-k8s-app-57fd566645-jxkm4 ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "kubectl delete pod my-k8s-app-57fd566645-jxkm4 ===",
+    "success": false,
+    "source": "Escalation: first attempt"
+  },
+  {
+    "timestamp": "2025-06-22T13:05:34.855491",
+    "pod": "my-k8s-app-57fd566645-jxkm4 ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": " It appears that you have a Kubernetes pod named `my-k8s-app-57fd566645-jxkm4` in the `default` namespace. This pod is currently in a `Pending` state, which means it has been scheduled to run on a node (Minikube in this case), but Kubernetes is unable to start the container for some reason.\n\nHere are some common reasons why a pod may be stuck in the Pending state:\n\n1. Insufficient resources: Check if there are enough CPU, memory, and storage available on the node to run the pod. You can use `kubectl describe` command to check the status of nodes and pods.\n2. Wrong container image: Make sure that you have correctly specified the container image in your Kubernetes deployment or daemonset manifest file.\n3. Network policies: If there are network policies configured on your cluster, make sure they allow traffic to and from the pod's IP address.\n4. Resource limits: Check if you have set any resource limits in your pod specification that might be causing the pod to fail to start.\n5. Pod disruption budget (PDB): If a PDB is configured for the namespace or pod, it may prevent the pod from being restarted if it fails.\n\nYou can also check the event logs of the pod using `kubectl describe pod my-k8s-app-57fd566645-jxkm4` to get more details about why the pod is stuck in the Pending state.",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T14:06:14.236912",
+    "pod": "my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "issue_type": "Container Error",
+    "fix_command": " It appears you have a Kubernetes (K8s) deployment named \"my-k8s-app\" running in the default namespace, versioned as 1.16.0 and managed by Helm. The pod with the Service Account \"my-k8s-app-my-k8s-app-chart\" is currently deployed on a node named \"minikube/192.168.49.2.\" The deployment was started on April 12, 2025 at 11:27 AM Indian Standard Time (IST).\n\nThis deployment's specific version of the chart can be found at the URL `https://helm.sh/charts/my-k8s-app-chart-6895b45c99`.\n\nTo interact with this deployment, you would typically use kubectl commands like describe (`kubectl describe pod my-k8s-app-my-k8s-app-chart`) or logs (`kubectl logs -f my-k8s-app-my-k8s-app-chart`). If you encounter any issues, these commands can help diagnose problems within your deployment.",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T14:15:36.802985",
+    "pod": "nginx-pod ===",
+    "issue_type": "Container Error",
+    "fix_command": " It appears you have a running Pod named `nginx-pod` in the default namespace on your Minikube cluster. This Pod is running the Nginx web server container, which was launched from the official `nginx` Docker image. The Pod's IP address is 10.244.0.73 within the Kubernetes network.\n\nIf you would like to access this Nginx service externally (i.e., not just within the Minikube environment), you can create a Service for it with a LoadBalancer or NodePort type depending on your use case and cluster settings. For example:\n\n```yaml\napiVersion: v1\nkind: Service\nmetadata:\n  name: nginx-service\nspec:\n  selector:\n    run: nginx-pod\n  ports:\n  - name: http\n    port: 80\n    targetPort: 80\n  type: LoadBalancer\n```\n\nYou can then apply this Service configuration using `kubectl apply -f myservice.yaml`. Once the Service is created, you should be able to access your Nginx server at the external IP address of your Minikube instance on port 80 (or whatever port you chose).\n\nTo find the external IP address of your Minikube cluster, execute:\n\n```sh\nminikube ip\n```",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T14:49:32.508928",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T14:49:33.015387",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Escalation: initial fix"
+  },
+  {
+    "timestamp": "2025-06-22T14:49:33.487923",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl logs crash-test ===",
+    "success": false,
+    "source": "Escalation: check for app error logs"
+  },
+  {
+    "timestamp": "2025-06-22T14:52:15.616381",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": " It appears you have a container named `fail-container` running in the `default` namespace within your Kubernetes cluster. The container is based on the `busybox` image and its IP address is `10.244.0.235`. However, there seems to be an unexpected output at the end of your log, which looks like a Docker container ID and Image ID. This might suggest that the container is actually running in Docker instead of Kubernetes, or there's some confusion in how the cluster information is being presented.\n\nIf you want to check if this container is running on Kubernetes, you can use `kubectl` command:\n\n```\nkubectl get pods\n```\n\nThis will list all the Pods running in your cluster and you should see the `fail-container` listed there. If it's not, then it might be running on a different environment like Docker or other containerization platforms.",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T14:55:19.070628",
+    "pod": "my-k8s-app-57fd566645-79tnk ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "kubectl delete pod my-k8s-app-57fd566645-79tnk ===",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T14:55:20.116455",
+    "pod": "my-k8s-app-57fd566645-79tnk ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "kubectl delete pod my-k8s-app-57fd566645-79tnk ===",
+    "success": false,
+    "source": "Escalation: first attempt"
+  },
+  {
+    "timestamp": "2025-06-22T14:59:41.075318",
+    "pod": "my-k8s-app-57fd566645-79tnk ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": " Based on the information provided, this is a Kubernetes Pod named `my-k8s-app-57fd566645-79tnk` in the default namespace. It is currently in a Pending state and being controlled by a ReplicaSet.\n\nHere's some additional information that can help you troubleshoot this issue:\n\n1. Check the status of the ReplicaSet `my-k8s-app-57fd` using the command `kubectl get rs my-k8s-app-57fd`. Look for any error messages, such as missing PersistentVolumeClaims or other resources required by your application.\n\n2. If there are no issues with the ReplicaSet, verify that the PodSpec defined in the Deployment/StatefulSet (the parent resource of the ReplicaSet) is correct and matches the environment you're running in. For example, ensure that the container image specified in the spec matches what's available on your cluster or registry, and the required resources like CPU, Memory, and storage are correctly set.\n\n3. Inspect the logs of the Pod using `kubectl logs my-k8s-app-57fd566645-79tnk` to see if there's any error message or information that might indicate why the container is not starting up correctly.\n\n4. Check the Event Log for the Pod and ReplicaSet using `kubectl describe pod my-k8s-app-57fd566645-79tnk` or `kubectl describe rs my-k8s-app-57fd`. Look for any events related to the container startup failure, such as network errors, image pull failures, or resource exhaustion.\n\n5. If the problem persists, consider creating a simpler application and gradually adding components back in until you can isolate the issue causing the Pending state. This can help narrow down potential problems with your deployment configuration or environment settings.",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T15:08:37.314377",
+    "pod": "my-k8s-app-68cb77db4d-cqr9m ===",
+    "issue_type": "Pod is running, but the Host Port is not specified",
+    "fix_command": " This output appears to be the Kubernetes description of a running Pod named `my-k8s-app-68cb77db4d` in the default namespace. It is running on a node with IP address `192.168.49.2`, and its service account is `default`. The app running inside this pod is called `my-k8s-app`, and it has been running since Sat, 21 Jun 2025 14:37:34 +0530. Its IP address within the cluster is `10.244.0.232`. This pod is being controlled by a ReplicaSet named `my-k8s-app-68cb77db4d`, which ensures that a specified number of replicas of this pod are running at all times. The container ID for the main container in this pod is listed as `<container_id>`.\n\nHowever, it seems like the Container ID is truncated. You can use the command `kubectl describe <pod-name>` to get more detailed information about this Pod and its associated resources.",
+    "success": false,
+    "source": "LLM"
+  },
+  {
+    "timestamp": "2025-06-22T15:14:06.923297",
+    "pod": "my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "issue_type": "Liveness probe failed",
+    "fix_command": "kubectl describe pod my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p === # Investigate crash loop",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T15:14:07.626580",
+    "pod": "my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "issue_type": "Liveness probe failed",
+    "fix_command": "kubectl describe pod my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "success": false,
+    "source": "Escalation: why restart is triggered"
+  },
+  {
+    "timestamp": "2025-06-22T15:14:08.604827",
+    "pod": "my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "issue_type": "Liveness probe failed",
+    "fix_command": "kubectl logs my-k8s-app-my-k8s-app-chart-6895b45c99-nfj2p ===",
+    "success": false,
+    "source": "Escalation: debug actual cause"
+  },
+  {
+    "timestamp": "2025-06-22T16:16:36.380694",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T16:16:37.059977",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl rollout restart deployment crash-test ===",
+    "success": false,
+    "source": "Escalation: initial fix"
+  },
+  {
+    "timestamp": "2025-06-22T16:16:37.783902",
+    "pod": "crash-test ===",
+    "issue_type": "CrashLoopBackOff",
+    "fix_command": "kubectl logs crash-test ===",
+    "success": false,
+    "source": "Escalation: check for app error logs"
+  },
+  {
+    "timestamp": "2025-06-22T16:24:46.883023",
+    "pod": "my-k8s-app-57fd566645-mb76v ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "kubectl delete pod my-k8s-app-57fd566645-mb76v ===",
+    "success": false,
+    "source": "Rule"
+  },
+  {
+    "timestamp": "2025-06-22T16:24:48.154082",
+    "pod": "my-k8s-app-57fd566645-mb76v ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": "kubectl delete pod my-k8s-app-57fd566645-mb76v ===",
+    "success": false,
+    "source": "Escalation: first attempt"
+  },
+  {
+    "timestamp": "2025-06-22T16:30:00.810800",
+    "pod": "my-k8s-app-57fd566645-mb76v ===",
+    "issue_type": "ImagePullBackOff",
+    "fix_command": " This output is the status of a Kubernetes Pod named `my-k8s-app-57fd566645-mb76v` in the default namespace. The pod is currently in a Pending state, which means it has been created but is not yet running or active.\n\nHere's a brief explanation of each line:\n\n1. Name: The name of the Pod.\n2. Namespace: The namespace where the Pod resides.\n3. Priority: The priority class that schedules this pod on nodes. A lower value indicates higher priority.\n4. Service Account: The service account associated with the pod, which grants permissions for API access and other system services.\n5. Node: The host node where the pod is currently scheduled to run (in this case, Minikube at 192.168.49.2).\n6. Start Time: The time when the Pod was created.\n7. Labels: Key-value pairs that can be used for filtering and selecting Pods. In this example, there are two labels: `app=my-k8s-app` and `pod-template-hash=57fd566645`.\n8. Annotations: Additional metadata about the Pod, in this case, an annotation indicating when the pod was last restarted (according to kubectl).\n9. Status: The current status of the Pod, which is Pending.\n10. IP: The IP address assigned to the Pod within the cluster network (10.244.0.238 in this example).\n11. Controlled By: The object that manages this pod's lifecycle (in this case, a ReplicaSet named `my-k8s-app-57fd`).",
+    "success": false,
+    "source": "LLM"
+  }
+]

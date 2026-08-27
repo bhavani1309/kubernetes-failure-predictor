@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: autofixerai
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: autofixerai
+  template:
+    metadata:
+      labels:
+        app: autofixerai
+    spec:
+      containers:
+      - name: autofixerai
+        image: bhavani1309/autofixerai:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8501  # If running Streamlit on 8501

@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: broken-image-pod
+spec:
+  containers:
+    - name: broken-container
+      image: nonexistent-image:latest
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crash-loop-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crash-app
+  template:
+    metadata:
+      labels:
+        app: crash-app
+    spec:
+      containers:
+        - name: crash-container
+          image: busybox
+          command: ["/bin/sh", "-c"]
+          args: ["echo 'This pod will crash'; exit 1"]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oomkiller-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: oom-app
+  template:
+    metadata:
+      labels:
+        app: oom-app
+    spec:
+      containers:
+        - name: oom-container
+          image: busybox
+          command: ["/bin/sh", "-c"]
+          args: ["dd if=/dev/zero of=/dev/null bs=1M count=100000"]
+          resources:
+            limits:
+              memory: "32Mi"

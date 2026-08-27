@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-06-22 19:24:00",
+  "pod_name": "nginx-pod",
+  "issue_type": "CrashLoopBackOff",
+  "strategy": "LLM_Retry_Then_Delete",
+  "success": false,
+  "Resource Exhaustion": {
+    "kubectl top pod This pod will crash": {
+      "success": 0,
+      "fail": 72
+    },
+    "kubectl edit deployment  # increase CPU/memory": {
+      "success": 0,
+      "fail": 25
+    },
+    "kubectl edit deployment This pod will crash # increase CPU/memory": {
+      "success": 0,
+      "fail": 47
+    }
+  },
+  "Resource exhaustion": {
+    "kubectl top pod This pod will crash": {
+      "success": 0,
+      "fail": 3
+    },
+    "kubectl edit deployment  # increase CPU/memory": {
+      "success": 0,
+      "fail": 1
+    },
+    "kubectl edit deployment This pod will crash # increase CPU/memory": {
+      "success": 0,
+      "fail": 2
+    }
+  },
+  "Resource consumption issue": {
+    "kubectl describe pod ThisPodWillCrash": {
+      "success": 0,
+      "fail": 1
+    },
+    "kubectl logs ThisPodWillCrash` (follow)": {
+      "success": 0,
+      "fail": 1
+    },
+    "kubectl top pod ThisPodWillCrash": {
+      "success": 0,
+      "fail": 1
+    }
+  },
+  "Resource consumption and performance": {
+    "kubectl get pods -o yaml": {
+      "success": 0,
+      "fail": 1
+    }
+  },
+  "ImagePullBackOff": {
+    "kubectl delete pod Name:             crash-deploy-5b9856f459-9gmrn": {
+      "success": 0,
+      "fail": 38
+    },
+    "kubectl edit deployment Name:             crash-deploy # verify image name and tag": {
+      "success": 0,
+      "fail": 38
+    }
+  }
+}

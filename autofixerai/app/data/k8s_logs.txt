@@ -1,0 +1,6 @@
+=== my-crash-pod ===
+Error: CrashLoopBackOff detected
+This pod will crash repeatedly due to insufficient memory
+
+=== my-image-pod ===
+Error from server (BadRequest): Failed to pull image xyz:latest

@@ -1,0 +1,73 @@
+- name: ImagePullBackOff
+  pattern: "Failed to pull image"
+  fix: "kubectl delete pod {pod}"
+  explanation: "Pod failed to pull its image; deleting it will force a retry (with correct image/credentials)."
+
+- name: CrashLoopBackOff
+  pattern: "CrashLoopBackOff"
+  fix: "kubectl rollout restart deployment {deployment}"
+  explanation: "Container keeps crashing; restarting the Deployment gives it a clean slate."
+
+- name: OOMKilled
+  pattern: "OOMKilled"
+  fix: "kubectl set resources deployment/{deployment} --limits=memory=512Mi"
+  explanation: "Pod was OOMKilled; increasing its memory limit often resolves it."
+
+- name: ErrImagePull
+  pattern: "ErrImagePull"
+  fix: "docker login <registry-url>"
+  explanation: "Image pull failed due to registry auth; logging into registry fixes it."
+
+- name: ReadinessProbeFailed
+  pattern: "Readiness probe failed"
+  fix: "kubectl describe pod {pod}"
+  explanation: "Readiness probe is failing; describe the pod for details."
+
+- name: LivenessProbeFailed
+  pattern: "Liveness probe failed"
+  fix: "kubectl describe pod {pod}"
+  explanation: "Liveness probe is failing; describe to see why the container keeps restarting."
+
+- name: VolumeMountError
+  pattern: "MountVolume.SetUp failed"
+  fix: "kubectl describe pvc && kubectl describe pod {pod}"
+  explanation: "Volume mount failed; check PVC and pod details."
+
+- name: NodeAffinityIssue
+  pattern: "no nodes available that match"
+  fix: "kubectl edit deployment {deployment}"
+  explanation: "Node affinity rules blocking scheduling; adjust them in the Deployment."
+
+- name: ImagePullSecretsNotFound
+  pattern: "secrets \".*\" not found"
+  fix: "kubectl create secret docker-registry <name> --docker-server=<url> --docker-username=<user> --docker-password=<pass>"
+  explanation: "Missing ImagePullSecret; create it with correct registry credentials."
+
+# ↓ New entry for your crashing‐pod test ↓
+- name: ResourceExhaustion
+  pattern: "(Resource consumption|This pod will crash|Memory usage)"
+  fix: "kubectl top pod {pod}"
+  explanation: "Pod is crashing due to resource exhaustion; `kubectl top pod` shows its CPU/memory usage so you can adjust limits."
+- name: BrokenImage
+  pattern: "Error from server.*pull image|Failed to pull image"
+  fix:    "kubectl delete pod {pod}"
+  explanation: "Image pull failed; deleting pod forces a retry."
+# at the bottom of config/rules.yaml
+# Synthetic test to exercise the rule-based path
+- name: SyntheticCrashTest
+  pattern: "This pod will crash"
+  fix:    "kubectl delete pod {pod}"
+  explanation: "Synthetic rule: delete the pod to demonstrate automatic remediation."
+- name: CustomImagePullError
+  pattern: "waiting to start.*pull image"
+  fix: "kubectl delete pod {pod}"
+  explanation: "Pod could not pull its image; deleting will force a retry."
+
+- name: CustomCrashSignal
+  pattern: "This pod will crash|\\bcrashing\\b"
+  fix: "kubectl delete pod {pod}"
+  explanation: "Detected custom crash signal; recycling the pod may resolve transient faults."
+- name: CustomWillCrash
+  pattern: "This pod will crash"
+  fix: "kubectl delete pod {pod}"
+  explanation: "Test message indicates pod is un-healthy; deleting triggers a fresh instance."

@@ -1,0 +1,9 @@
+streamlit
+pyyaml
+psutil
+requests
+kubernetes
+ollama
+pandas
+langchain-community
+langchain-ollama

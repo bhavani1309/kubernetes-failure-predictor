@@ -1,0 +1,116 @@
+- issue: ImagePullBackOff
+  steps:
+    - fix: "kubectl delete pod {pod}"
+      condition: "first attempt"
+    - fix: "kubectl edit deployment {deployment} # verify image name and tag"
+      condition: "if issue persists"
+    - fix: "docker login <registry-url>"
+      condition: "if private registry access is needed"
+
+- issue: CrashLoopBackOff
+  steps:
+    - fix: "kubectl rollout restart deployment {deployment}"
+      condition: "initial fix"
+    - fix: "kubectl logs {pod}"
+      condition: "check for app errors"
+    - fix: "kubectl edit deployment {deployment} # check env vars, entrypoint"
+      condition: "if misconfiguration suspected"
+
+- issue: OOMKilled
+  steps:
+    - fix: "kubectl describe pod {pod}"
+      condition: "diagnose resource limits"
+    - fix: "kubectl edit deployment {deployment} # increase memory limits"
+      condition: "if memory was too low"
+    - fix: "kubectl top pod {pod}"
+      condition: "verify actual memory usage"
+
+- issue: Readiness probe failed
+  steps:
+    - fix: "kubectl logs {pod}"
+      condition: "analyze container startup"
+    - fix: "kubectl edit deployment {deployment} # adjust readiness probe"
+      condition: "if timeout or path is invalid"
+    - fix: "kubectl get svc"
+      condition: "validate service exposure"
+
+- issue: Liveness probe failed
+  steps:
+    - fix: "kubectl describe pod {pod}"
+      condition: "identify restart cause"
+    - fix: "kubectl edit deployment {deployment} # increase liveness timeout"
+      condition: "probe may be too aggressive"
+    - fix: "kubectl logs {pod}"
+      condition: "inspect deeper app errors"
+
+- issue: VolumeMount error
+  steps:
+    - fix: "kubectl describe pvc"
+      condition: "verify volume claim binding"
+    - fix: "kubectl edit deployment {deployment} # fix volumeMount path"
+      condition: "if mount path is misconfigured"
+    - fix: "kubectl get sc"
+      condition: "check storage class configuration"
+
+- issue: NodeAffinity issue
+  steps:
+    - fix: "kubectl describe pod {pod}"
+      condition: "inspect scheduling failure"
+    - fix: "kubectl get nodes --show-labels"
+      condition: "verify matching node labels"
+    - fix: "kubectl edit deployment {deployment} # update affinity"
+      condition: "relax affinity/toleration rules"
+
+- issue: ImagePullSecrets not found
+  steps:
+    - fix: "kubectl get secret"
+      condition: "check if secret exists"
+    - fix: "kubectl create secret docker-registry"
+      condition: "recreate missing secret"
+    - fix: "kubectl edit deployment {deployment} # add secret reference"
+      condition: "attach pull secret to pod spec"
+
+- issue: Resource Exhaustion
+  steps:
+    - fix: "kubectl top pod {pod}"
+      condition: "analyze current usage"
+    - fix: "kubectl edit deployment {deployment} # increase CPU/memory"
+      condition: "limits are too low"
+    - fix: "kubectl autoscale deployment {deployment} --cpu-percent=80 --min=1 --max=5"
+      condition: "scale out if needed"
+
+- issue: Disk I/O Issue
+  steps:
+    - fix: "kubectl logs {pod}"
+      condition: "check for disk I/O errors"
+    - fix: "kubectl describe pod {pod}"
+      condition: "check node and volume conditions"
+    - fix: "kubectl delete pod {pod}"
+      condition: "force recreation on healthy node"
+
+- issue: PVC Binding Error
+  steps:
+    - fix: "kubectl get pvc"
+      condition: "check claim existence"
+    - fix: "kubectl describe pod {pod}"
+      condition: "check volume binding failure"
+    - fix: "kubectl edit deployment {deployment} # fix PVC reference"
+      condition: "if incorrect name used"
+
+- issue: Autoscaling Needed
+  steps:
+    - fix: "kubectl top pod {pod}"
+      condition: "check current CPU usage"
+    - fix: "kubectl autoscale deployment {deployment} --cpu-percent=80 --min=1 --max=5"
+      condition: "enable autoscaling"
+    - fix: "kubectl describe hpa"
+      condition: "verify HPA is working"
+
+- issue: Misconfiguration Detected
+  steps:
+    - fix: "kubectl describe pod {pod}"
+      condition: "read warning messages"
+    - fix: "kubectl logs {pod}"
+      condition: "analyze runtime failure"
+    - fix: "kubectl edit deployment {deployment} # fix spec"
+      condition: "correct port/env/args"

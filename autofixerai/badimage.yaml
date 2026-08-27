@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: badimage-pod
+spec:
+  containers:
+  - name: bad
+    image: doesnotexist/neverimage:404
